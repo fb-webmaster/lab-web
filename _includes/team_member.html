@@ -1,13 +1,20 @@
 <li class="media mb-5">
-    <img class="align-self-center mr-3"
-         src="{{ site.baseurl }}/assets/images/team/{{ member.image }}"
+  <img class="align-self-center mr-3"
+       src="{{ '/assets/images/team/' | append: member.image | relative_url }}"
+       style="max-width: 100px; filter: grayscale(100%); border-radius: 50%;"
+       alt="{{ member.title }}">
 
-         style="max-width: 100px; filter: grayscale(100%); border-radius: 50%;"
-         alt="{{member.title}}">
+  <div class="media-body">
+    <h5 class="mt-0">
+      {% assign href = member.url | default: '' | to_s | strip %}
+      {% if href != '' and member.detail != false %}
+        <a href="{{ href | relative_url }}">{{ member.title }}</a>
+      {% else %}
+        {{ member.title }}
+      {% endif %}
+    </h5>
 
-    <div class="media-body">
-      <h5 class="mt-0"><a href="{{ member.url | relative_url }}">{{ member.title }}</a></h5>
-      <p>{{member.role}}</p>
-      {%- include team_member_social.html -%}
-    </div>
+    <p>{{ member.role }}</p>
+    {%- include team_member_social.html member=member -%}
+  </div>
 </li>
