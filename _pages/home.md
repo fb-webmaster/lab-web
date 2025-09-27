@@ -1,36 +1,26 @@
 ---
-title: RT2 Lab
+title: Cornell Fashion & Body Tech Lab
 layout: homelay
 permalink: /
 ---
 
-The “Residual Tumor and Response to Treatment Laboratory” has four main goals.
+#### Our Research
 
-**Identification of clinical and pathological factors correlated with the long-term prognosis of TNBC and HER2 positive breast cancer patients treated by neoadjuvant chemotherapy.**
+We explore the impact of digital data on the future of fashion, particularly how digital input can improve the fit, design, and production of clothing. This encompasses a wide range of topics from pattern making to computer graphics to virtual reality and as such. We collaborate with academic units, companies and artist on projects related to body-garment relationships.
 
-We have built a retrospective clinical, pathological and radiological database
-of breast cancer patients treated by neoadjuvant chemotherapy at Institut
-Curie since 2002. In triple-negative breast carcinoma (TNBC) we have
-highlighted a strong association between the lymph node involvement after
-neoadjuvant chemotherapy (NAC) and a poor prognosis outcome. We concluded
-that clinical trials should be implemented for high-risk patients after NAC
-(pN+, Elston Ellis Grade 3 and non menopausal status) to validate new
-therapeutic solutions.
+Our goal is to transform apparel design, product development, manufacturing, and retail by leveraging digital technologies to create an environmentally sustainable apparel industry. We approach every project with a commitment to methodologically rigorous, multidisciplinary, and ethical research using both quantitative and qualitative methods. We ensure our findings have practical implications for academia, industry, and society.
 
-**Identification of robust biological-network driven gene-expression classification of TNBC and HER2 positive breast cancer to define new therapeutic interventions.**
+##### Key Areas of Focus
+- Technologies for apparel technical design teams and training the future workforce  
+- Tools and methods for virtual fit analysis
+- Artificial intelligence for garment fit
+- Virtual try-on and AR technologies for consumer use  
+- Improving mass-produced clothing fit (including protective apparel) using anthropometric databases  
+- Mass customization of clothing and understanding consumer interest in customization  
 
-We identified a robust six metagene classification across 1125 TNBC
-gene-expression profiles. An immune metagene is highly correlated to the
-prognosis of these patients. These findings open up interesting opportunities
-for the development of new therapeutic interventions in TNBC.
+#### Our Facilities
+The Cornell Fashion & Body Tech Lab is located in **Room 112, Human Ecology Building** on the Cornell University Ithaca campus. Our space is equipped with advanced tools for apparel research and teaching, including **two 3D body scanners**, [add other technologies here], and virtual/augmented reality applications. These resources enable our team and collaborators to prototype, test, and evaluate innovative approaches to apparel design and production.
 
-**Identification of dynamic markers of resistance in TNBC and HER2 positive breast cancer patients treated by neoadjuvant chemotherapy.**
+<img src="/assets/images/placeholder.png" alt="Photo of Lab Equipment" style="width:400px; border-radius:8px;">
 
-Using RNAsequencing, Whole Exome Sequencing and RPPA we are studying matched
-pre-treatment primary tumor biopsy and residual tumor after neoadjuvant
-treatment to identify modifications associated to resistance to
-systemic treatment.
 
-**High-througput screening of TNBC and HER2 positive breast cancer cell lines.**
-
-In order to identify efficient drugs to treat cancer patients, large screening programs have been launched with different setting of drugs and cancer cell lines (CCLE and CGP projects). We are developping 2D and 3D (magnetic levitation) breast cancer cell lines drug screening program with FDA approved drugs libraries.
