@@ -1,24 +1,13 @@
 ---
 layout: member
 category: staff
-title: 'Fabien Reyal'
-image: 'fabien.jpg'
+title: 'Dr.Fatma Baytar'
+image: 'placeholder.png'
 role: Lab director
-permalink: 'team/fabien-reyal'
+permalink: 'lab-web/team/fatma-baytar'
 social:
-    twitter: https://twitter.com/fabienreyal
-    linkedin: https://linkedin.com/in/fabienreyal
-    google-scholar: https://scholar.google.com/citations?user=VRZhLFsAAAAJ&hl=en&oi=ao
-    github:
-    website:
-    orcid:
-education:
+    linkedin: https://www.linkedin.com/in/fatma-baytar/
+    google-scholar: https://scholar.google.com/citations?user=fqlvDFEAAAAJ&hl=en
 ---
 
-Pr. Fabien Reyal was a student of the Xavier Bichat (Paris VII) faculty of medicine and was appointed Paris hospitals resident in 1995. After completing his internship in obstetrics and gynecology, he was appointed assistant chief resident at the Paris VII Xavier Bichat hospital in 2004.
-
-He ultimately decided to focus on gynecological, breast, and reconstructive cancer surgery, taking on the role of specialist assistant (2007) and specialist practitioner (2008) at Institut Curie.
-
-His scientific training led him to obtain a thesis in science from the Paris XI faculty and authorization to conduct research at the Paris VI faculty. He spent a year as a Researcher at the Amsterdam center for cancer research (2006).
-
-Today, he is head of the gynecological, breast and reconstructive cancer surgery department and leads a research team working on resistance to breast cancer treatment. Since September 2018, he is Profesor at Université Paris Descartes.
+Dr. Fatma Baytar is an Associate Professor in the Department of Human Centered Design at Cornell University. Her research foci are two-fold. The first is on developing new computational tools and methods for achieving seamless digitalization of new product development in the apparel industry. The second is on educating current and future workforce on using 3D digital technologies. Dr. Baytar is cross-trained in textile engineering and apparel design, and has extensive research and teaching experiences in using 3D body scan data as well as 3D apparel simulations. She has conducted research in the areas pertaining to the use of 3D technologies in determining sizing and fit of protective apparel, virtual fit, virtual avatars and body image issues, AR applications for virtual dressing rooms, and effects of using 3D virtual prototyping and VR on design skills. Her research findings have been disseminated in major peer-reviewed journals, and presented at international conferences. Dr. Baytar is a recipient of a National Science Foundation (NSF) CAREER Award.
