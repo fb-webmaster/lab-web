@@ -4,7 +4,7 @@ category: alumni
 title: Judith Abécassis
 image: judith.jpg
 role: PhD Student (in co-supervision with the <a target="blank" href="http://cbio.mines-paristech.fr/">CBIO</a>)
-permalink: 'team/judith-abecassis'
+permalink: 'lab-web/team/judith-abecassis'
 social:
     twitter: https://twitter.com/judithabk6
     linkedin: https://www.linkedin.com/in/judith-abecassis-0760a26b/
