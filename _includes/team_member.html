@@ -1,7 +1,13 @@
 <li class="media mb-5">
   <img class="align-self-center mr-3"
        src="{{ '/assets/images/team/' | append: member.image | relative_url }}"
-       style="max-width: 100px; filter: grayscale(100%); border-radius: 50%;"
+         style="
+            width: 100px;
+            height: 100px;
+            object-fit: cover;      /* keeps it from stretching */
+            filter: grayscale(100%);
+            border-radius: 50%;
+         "
        alt="{{ member.title }}">
 
   <div class="media-body">
