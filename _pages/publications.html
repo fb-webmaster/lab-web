@@ -1,21 +1,783 @@
 ---
 title: Publications
 layout: page
-excerpt: RT2 Lab -- Publications.
 permalink: /publications/
 ---
 
-<ul class="list-unstyled">
-    {% assign pub_list = site.data.publications | sort: 'Publication Year' | group_by: 'Publication Year' | reverse %}
+<style>
+  .pubs-grid{
+    display:grid;
+    grid-template-columns: 90px 1fr; /* left = year, right = entry */
+    column-gap: 1.5rem;
+    row-gap: 1.25rem;
+  }
+  .pubs-grid .year{
+    font-weight:700;
+    font-size:1.5rem;
+    white-space:nowrap;
+  }
+  .pubs-grid .entry{
+    line-height:1.6;
+  }
+  .pubs-grid .entry em{ font-style: italic; }
+  .pubs-grid .entry a{ text-decoration: underline; }
+  @media (max-width: 640px){
+    .pubs-grid{ grid-template-columns: 1fr; }
+    .pubs-grid .year{ font-size:1.25rem; margin-bottom:.25rem; }
+  }
+</style>
+<h5><em>This page is currently outdated...sorry! We’re working to update it.</em></h5><br>
 
-    {% for group in pub_list %}
+<h4>Peer-reviewed journal articles / book chapters</h4>
+<p><em>* signifies graduate student, † signifies undergraduate student</em></p><br>
+<div class="pubs-grid">
 
-        {% assign year = group.name | to_integer %}
+    <div class="year">2024</div>
+    <div class="entry">
+    Hillaire, J. M.* &amp; Baytar, F. (2024).
+    All-3D apparel development: Establishing the rules to enable 3D weaving from 3D digital garments.
+    <em>Journal of Engineered Fibers and Fabrics</em>, 19.
+    <a href="https://doi.org/10.1177/15589250241252634">https://doi.org/10.1177/15589250241252634</a>
+    </div>
 
-        <h3 class="mt-4">{{ year }}</h3>
-        {% for publi in group.items %}
-            {%- include publication.html -%}
-        {% endfor %}
+    <div class="year">2024</div>
+    <div class="entry">
+    Kim, Y.* &amp; Baytar, F. (2024).
+    Accuracy and feasibility of 3D virtual dynamic fit technology.
+    <em>International Journal of Clothing Science and Technology</em>, 36(3), 499–515.
+    <a href="https://doi.org/10.1108/IJCST-12-2023-0182">https://doi.org/10.1108/IJCST-12-2023-0182</a>
+    </div>
+    <div class="year">2024</div>
+  <div class="entry">
+    Galada, A.* &amp; Baytar, F. (2023). Developing a prediction model for improving bifurcated garment fit for mass customization.
+    <em>International Journal of Clothing Science and Technology</em>, 35(3), 397–418.
+    <a href="https://doi.org/10.1108/IJCST-12-2021-0179">https://doi.org/10.1108/IJCST-12-2021-0179</a>
+  </div>
 
-    {% endfor %}
-</ul>
+  <div class="year">2024</div>
+  <div class="entry">
+    Maher, M.*, Goodge, K.*, DuPuis, J.*, Frey, M., Park, H., Baytar, F. (2024).
+    Children’s Cloth Face Mask Sizing and Fit Analysis: Method Development.
+    <em>Fashion and Textiles</em>.
+    <a href="https://doi.org/10.1186/s40691-023-00366-4">https://doi.org/10.1186/s40691-023-00366-4</a>
+    (<a href="https://rdcu.be/dzFho">https://rdcu.be/dzFho</a>)
+  </div>
+
+  <div class="year">2024</div>
+  <div class="entry">
+    Buyukaslan, E., Baytar, F., Akdemir, D., &amp; Kalaoglu, F. (2024).
+    Predicting Consumers’ Garment Fit Evaluations by using Machine Learning and Virtual Try-on Technology.
+    [accepted, <em>Autex Journal</em>]
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Galada, A.* &amp; Baytar, F. Developing a prediction model to improve bifurcated garment fit and enable mass customization.
+    <em>International Journal of Clothing Science and Technology</em>.
+    (Accepted for publication)
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Buyukaslan, E., Baytar, F., &amp; Maher, M. (2023).
+    Fashion marketing with virtual humans as influencers. In Sayem A. (ed.),
+    <em>Digital Fashion Innovations – Advances in Design, Simulation, and Industry</em> (ISBN 9781032207278).
+    CRC Press, Routledge.
+  </div>
+
+  <div class="year">2022</div>
+  <div class="entry">
+    Goodge, K.*, DuPuis, J.*, Maher, M.*, Frey, M., Baytar, F., &amp; Park, H. (2022).
+    Cloth Face Mask Fit and Function for Children Part Two: Material Selection.
+    <em>Fashion &amp; Textiles</em>.
+  </div>
+
+  <div class="year">2022</div>
+  <div class="entry">
+    DuPuis, J.*, Goodge, K.*, Forstenhausler, L.†, Maher, M.*, Frey, M., Baytar, F., &amp; Park, H. (2022).
+    Cloth Face Mask Fit and Function for Children Part One: Design Exploration.
+    <em>Fashion &amp; Textiles</em>.
+  </div>
+
+  <div class="year">2021</div>
+  <div class="entry">
+    Song, H.K., Baytar, F., Ashdown, S., &amp; Kim, S. (2021).
+    3D anthropometric analysis of women’s aging bodies: upper body shape and posture changes.
+    <em>Fashion Practice</em>, 1–24.
+    <a href="https://doi.org/10.1080/17569370.2021.1879463">https://doi.org/10.1080/17569370.2021.1879463</a>
+  </div>
+
+  <div class="year">2021</div>
+  <div class="entry">
+    Gorea, A., Baytar, F., &amp; Sanders, E. (2021).
+    Challenges and design opportunities in prototyping seamless knitted apparel: a case study.
+    <em>International Journal of Fashion Design, Technology and Education</em>, 1–12.
+    <a href="https://doi.org/10.1080/17543266.2021.1881170">https://doi.org/10.1080/17543266.2021.1881170</a>
+  </div>
+
+  <div class="year">2020</div>
+  <div class="entry">
+    Gorea, A., Baytar, F., &amp; Sanders, E. (2020).
+    Effect of stitch patterns on moisture responsiveness of seamless knitted wool fabrics for activewear.
+    <em>International Journal of Clothing Science and Technology</em>, 33 (2), 175–187.
+    <a href="https://doi.org/10.1108/IJCST-11-2019-0173">https://doi.org/10.1108/IJCST-11-2019-0173</a>
+  </div>
+
+  <div class="year">2020</div>
+  <div class="entry">
+    Buyukaslan, E., Baytar, F., &amp; Kalaoglu, F. (2020).
+    Exploring the factors influencing consumers’ virtual garment fit satisfactions.
+    <em>Research Journal of Textile and Apparel</em>, 24 (4), 375–388.
+    <a href="https://doi.org/10.1108/RJTA-03-2020-0029">https://doi.org/10.1108/RJTA-03-2020-0029</a>
+  </div>
+
+  <div class="year">2020</div>
+  <div class="entry">
+    Gorea, A., &amp; Baytar, F. (2020).
+    Using 3D body scanning to measure compression variations in a seamless knitted sports bra.
+    <em>International Journal of Fashion Design, Technology and Education</em>, 13 (2), 111–119.
+    <a href="https://doi.org/10.1080/17543266.2020.1740948">https://doi.org/10.1080/17543266.2020.1740948</a>
+  </div>
+
+  <div class="year">2020</div>
+  <div class="entry">
+    Gorea, A., Baytar, F., &amp; Sanders, E. (2020).
+    Experimental design and evaluation of a moisture-responsive sports bra.
+    <em>Fashion and Textiles</em>, 7 (1), 1–21.
+    <a href="https://doi.org/10.1186/s40691-020-00209-6">https://doi.org/10.1186/s40691-020-00209-6</a>
+  </div>
+
+  <div class="year">2020</div>
+  <div class="entry">
+    Baytar, F., Chung, T., &amp; Shin, E. (2020).
+    Evaluating garments in augmented reality when shopping online.
+    <em>Journal of Fashion Marketing and Management</em>, 24 (4), 667–683.
+    <a href="https://doi.org/10.1108/JFMM-05-2018-0077">https://doi.org/10.1108/JFMM-05-2018-0077</a>
+  </div>
+
+  <div class="year">2019</div>
+  <div class="entry">
+    Shin, E., Zhang, L., Hwang, C., &amp; Baytar, F. (2019).
+    The role of visual and verbal information on the functionality of shapewear in female consumers’ online purchase decisions.
+    <em>The Research Journal of the Costume Culture</em>, 27 (6), 539–552.
+    <a href="https://doi.org/10.29049/rjcc.2019.27.6.539">https://doi.org/10.29049/rjcc.2019.27.6.539</a>
+  </div>
+
+  <div class="year">2019</div>
+  <div class="entry">
+    Abner, M., Baytar, F., &amp; Kreiner, D. (2019).
+    Applying the ESD approach in textile and apparel education.
+    <em>International Journal of Sustainability in Higher Education</em>, 20 (1), 75–90.
+    <a href="https://doi.org/10.1108/IJSHE-02-2018-0029">https://doi.org/10.1108/IJSHE-02-2018-0029</a>
+  </div>
+
+  <div class="year">2019</div>
+  <div class="entry">
+    Lee, M., Karpova, E., &amp; Baytar, F. (2019).
+    The effects of information on young consumers’ attitudes and purchase intentions of fashion products made of fur, leather, and wool.
+    <em>Journal of Global Fashion Marketing</em>, 10 (2), 177–193.
+    <a href="https://doi.org/10.1080/20932685.2019.1577160">https://doi.org/10.1080/20932685.2019.1577160</a>
+  </div>
+
+  <div class="year">2019</div>
+  <div class="entry">
+    Baytar, F. &amp; Sanders, E. (2019).
+    Computer-aided patternmaking: A brief history of technology acceptance from 2D pattern drafting to 3D modeling.
+    In J. Grayer Moore (Ed.), <em>Patternmaking History and Theory</em> (1st ed., pp. 7–13). Bloomsbury Publishing.
+  </div>
+
+  <div class="year">2018</div>
+  <div class="entry">
+    Lee, Y., Hwang, C., &amp; Baytar, F. (2018).
+    Exploring apparel design and fit for older women: A technology intervention.
+    <em>International Journal of Fashion Design, Technology and Education</em>, 12 (1), 86–95.
+    <a href="https://doi.org/10.1080/17543266.2018.1496482">https://doi.org/10.1080/17543266.2018.1496482</a>
+  </div>
+
+  <div class="year">2018</div>
+  <div class="entry">
+    Abner, M., &amp; Baytar, F. (2018).
+    Apps to increase student engagement: A case of textiles and apparel sustainability education.
+    <em>International Journal of Fashion Design, Technology and Education</em>, 12 (1), 56–64.
+    <a href="https://doi.org/10.1080/17543266.2018.1477996">https://doi.org/10.1080/17543266.2018.1477996</a>
+  </div>
+
+  <div class="year">2018</div>
+  <div class="entry">
+    Baytar, F. (2018).
+    Apparel CAD patternmaking with 3D simulations: Impact of recurrent use of virtual prototypes on students’ skill development.
+    <em>International Journal of Fashion Design, Technology and Education</em>, 11 (2), 187–195.
+    <a href="https://doi.org/10.1080/17543266.2017.1378731">https://doi.org/10.1080/17543266.2017.1378731</a>
+  </div>
+
+  <div class="year">2017</div>
+  <div class="entry">
+    Zhang, L., Shin, E., Hwang, C., &amp; Baytar, F. (2017).
+    The use of 3D body scanning technology to assess the effectiveness of shapewear: Changes in body shape and attractiveness.
+    <em>International Journal of Fashion Design, Technology and Education</em>, 10 (2), 190–199.
+    <a href="https://doi.org/10.1080/17543266.2016.1225824">https://doi.org/10.1080/17543266.2016.1225824</a>
+  </div>
+
+  <div class="year">2015</div>
+  <div class="entry">
+    Baytar, F., &amp; Ashdown, S. (2015).
+    An exploratory study of interaction patterns around the use of virtual apparel design and try-on technology.
+    <em>Fashion Practice</em>, 7 (1), 31–52.
+    <a href="https://doi.org/10.2752/175693815X14182200335655">https://doi.org/10.2752/175693815X14182200335655</a>
+  </div>
+
+  <div class="year">2014</div>
+  <div class="entry">
+    Shin, E.* &amp; Baytar, F. (2014).
+    Apparel fit and size concerns and intentions to use virtual try-on.
+    <em>Clothing and Textiles Research Journal</em>, 32 (1), 20–33.
+    <a href="https://www.tandfonline.com/doi/citedby/10.2752/175693815X14182200335655">https://www.tandfonline.com/doi/citedby/10.2752/175693815X14182200335655</a>
+  </div>
+
+  <div class="year">2013</div>
+  <div class="entry">
+    Baytar, F., &amp; Ashdown, S. (2013).
+    Using video as a storytelling medium to influence textile and clothing students’ environmental knowledge and attitudes.
+    <em>International Journal of Fashion Design, Technology and Education</em>, 7 (1), 31–41.
+    <a href="https://doi.org/10.1080/17543266.2013.864339">https://doi.org/10.1080/17543266.2013.864339</a>
+  </div>
+</div>
+<br>
+<h4>Peer-reviewed conference proceedings</h4>
+<p><em>* signifies graduate student, † signifies undergraduate student</em></p><br>
+
+<div class="pubs-grid">
+    <div class="year">2024</div>
+  <div class="entry">
+    Baytar, F., Maher, M.*, Zong, W.*, Yang, Y.* &amp; Galada, A.* (2024, January 27).
+    “Fit expectations for the mass-customized garments designed by using mobile scanning apps”.
+    <em>International Textile and Apparel Association Annual Conference Proceedings</em>, 80(1).
+    <a href="https://doi.org/10.31274/itaa.17502">https://doi.org/10.31274/itaa.17502</a>
+  </div>
+
+  <div class="year">2024</div>
+  <div class="entry">
+    Campbell, L. F.*, Delp, K., &amp; Baytar, F. (2024, January 27).
+    3D bodies to flat patterns: A comparison of techniques.
+    <em>International Textile and Apparel Association Annual Conference Proceedings</em>, 80(1).
+    <a href="https://doi.org/10.31274/itaa.17527">https://doi.org/10.31274/itaa.17527</a>
+  </div>
+
+  <div class="year">2024</div>
+  <div class="entry">
+    Sanchez, H.*, Campbell, L. F.*, Maher, M.*, &amp; Baytar, F. (2024, January 27).
+    Development of a test method to measure the drape of hemmed samples by using a 3D body scanner.
+    <em>International Textile and Apparel Association Annual Conference Proceedings</em>, 80(1).
+    <a href="https://doi.org/10.31274/itaa.17491">https://doi.org/10.31274/itaa.17491</a>
+  </div>
+
+  <div class="year">2024</div>
+  <div class="entry">
+    Zong, W.* &amp; Baytar, F. (2024, January 27).
+    Style preferences toward the dress recommended based on body shapes.
+    <em>International Textile and Apparel Association Annual Conference Proceedings</em>, 80(1).
+    <a href="https://doi.org/10.31274/itaa.17523">https://doi.org/10.31274/itaa.17523</a>
+  </div>
+
+  <div class="year">2024</div>
+  <div class="entry">
+    Maher, M.* &amp; Baytar, F. (2024, January 23).
+    Supporting technical designers’ decision-making in the era of artificial intelligence.
+    <em>International Textile and Apparel Association Annual Conference Proceedings</em>, 80(1).
+    <a href="https://doi.org/10.31274/itaa.17310">https://doi.org/10.31274/itaa.17310</a>
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Sanchez, H.* &amp; Baytar, F. (2023, September 12–14).
+    Exploration of the effect of edge finishes on physical and virtual fabric drape.
+    Poster presentation at <em>AATCC 2023 Textile Discovery Summit</em>, Greenville, SC.
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Yang, Y.* &amp; Baytar, F. (2023, November 8–11).
+    Fit models’ understanding of garment fit: Can we trust their feedback?
+    <em>International Textile and Apparel Association Annual Conference Proceedings</em>, 80(1).
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Yang, Y.* &amp; Baytar, F. (2023, November 8–11).
+    Introducing restrictions to achieve unlimited creativity in the fashion design process.
+    <em>International Textile and Apparel Association Annual Conference Proceedings</em>, 80(1).
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Zong, W.* &amp; Baytar, F. (2023, November 8–11).
+    Women’s Alpha Size Charts Comparison Among 120 Clothing Brands [Poster presentation].
+    <em>International Textile and Apparel Association Annual Conference Proceedings</em>, 80(1).
+    <a href="https://doi.org/10.31274/itaa.17519">https://doi.org/10.31274/itaa.17519</a>
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Song, H. K. &amp; Baytar, F. (Submitted in September 2023).
+    Using multiple-view analysis to categorize upper body shapes of females aged 46–69.
+    <em>Korean Society of Costume Conference</em>.
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Campbell, L. F.*, Delp, K., &amp; Baytar, F. (2023, July 27–31).
+    Flat Patterns from Curved Bodies. <em>Bridges Conference</em>, Halifax, Nova Scotia, Canada.
+    <a href="https://www.bridgesmathart.org/">https://www.bridgesmathart.org/</a>
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Zong, W.*, Yang, J., &amp; Baytar, F. (2023, October 17–18).
+    Predicting Human Body Measurements Using MediaPipe Pose Auto-Capture.
+    <em>3DBODY.TECH 2023 Conference &amp; Expo</em>, Lugano, Switzerland.
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Petrova, A. &amp; Baytar, F. (2023, October 17–18).
+    A case for standardization of body measurement definitions: Investigation of torso girths.
+    <em>3DBODY.TECH 2023 Conference &amp; Expo</em>, Lugano, Switzerland.
+    <a href="https://doi.org/10.15221/23.41">https://doi.org/10.15221/23.41</a>
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Zong, W.*, Yang, J., &amp; Baytar, F. (2023, October 17–18).
+    Predicting Human Body Measurements Using MediaPipe Pose Auto-Capture.
+    <em>3DBODY.TECH 2023 Conference &amp; Expo</em>, Lugano, Switzerland.
+    <a href="https://doi.org/10.15221/23.33">https://doi.org/10.15221/23.33</a>
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Baytar, F., Maher, M.*, Galada, A.* &amp; Yang, Y.* (2023, March 27–28).
+    Scan avatar rigging challenges and their effects on clothing simulation.
+    <em>The International Conference Clothing-Body Interaction 2023</em>.
+  </div>
+
+  <div class="year">2023</div>
+  <div class="entry">
+    Baytar, F., Maher, M.*, Galada, A.* &amp; Yang, Y.* (Accepted).
+    A comparison of changes in body measurements of 3D body scans and rigged scans for active body poses.
+    <em>The International Conference Clothing-Body Interaction 2023</em>.
+  </div>
+
+  <div class="year">2022</div>
+  <div class="entry">
+    Baytar, F., Yang, Y.* &amp; Maher, M.* (2022, September 9).
+    The Importance of Deciphering Tacit Knowledge in Apparel Product Development for Explainable AI:
+    Proposed steps for increasing digitalization in the apparel industry.
+    <em>SETN '22: Proceedings of the 12th Hellenic Conference on Artificial Intelligence</em> [Online presentation].
+    Crete, Greece. <a href="https://doi.org/10.1145/3549737.3549806">https://doi.org/10.1145/3549737.3549806</a>
+  </div>
+
+  <div class="year">2022</div>
+  <div class="entry">
+    Baytar, F., Maher, M.* &amp; Galada, A.* (2022, October 25–26).
+    Evaluating Fit by Using Animated Body Scan Avatars and Digital Coveralls.
+    <em>3DBODY.TECH Conference &amp; Expo</em> [Online presentation]. Lugano, Switzerland.
+  </div>
+
+  <div class="year">2022</div>
+  <div class="entry">
+    Maher, M., Goodge, K., Du Puis, J. L., Frey, M., Park, H., &amp; Baytar, F. (2022, October 27–29).
+    Cloth Face Mask Fit and Function for Children: Sizing and Fit Analysis.
+    <em>2022 Annual Conference of ITAA</em> (International Textile and Apparel Association), Denver, CO.
+  </div>
+
+  <div class="year">2022</div>
+  <div class="entry">
+    Maher, M.* &amp; Baytar, F. (2022, October 27–29).
+    Associations between Body Measurements, Age, and BMI to Determine Female Body Asymmetry.
+    <em>2022 Annual Conference of ITAA</em>, Denver, CO.
+  </div>
+
+  <div class="year">2022</div>
+  <div class="entry">
+    Yang, Y.* &amp; Baytar, F. (2022, October 27–29).
+    An Improved “Team Mental Model” as an Assessment Tool for Group Decision-making during Fit Sessions.
+    <em>2022 Annual Conference of ITAA</em>, Denver, CO.
+  </div>
+
+  <div class="year">2022</div>
+  <div class="entry">
+    Zong, W.* &amp; Baytar, F. (2022, October 27–29).
+    Style recommendations for female body shape: A case study from fashion stylists.
+    <em>2022 Annual Conference of ITAA</em>, Denver, CO.
+  </div>
+
+  <div class="year">2022</div>
+  <div class="entry">
+    Goodge, K.* &amp; Baytar, F. (2022, October 27–29).
+    Talking Heads: 3D Head Scanning to Assess the Dynamic Fit of Facemasks.
+    <em>2022 Annual Conference of ITAA</em>, Denver, CO.
+  </div>
+
+  <div class="year">2022</div>
+  <div class="entry">
+    Jo, J.* &amp; Baytar, F. (2022, October 27–29).
+    Generative Pants Pattern Making for Optimized Fit in Mass Customization.
+    <em>2022 Annual Conference of ITAA</em>, Denver, CO.
+  </div>
+
+  <div class="year">2022</div>
+  <div class="entry">
+    Hillaire, J.* &amp; Baytar, F. (2022, October 27–29).
+    All 3D Garment Design and Development Processes for 3D Weaving.
+    <em>2022 Annual Conference of ITAA</em>, Denver, CO. (Poster presentation)
+  </div>
+
+  <div class="year">2021</div>
+  <div class="entry">
+    Baytar, F., Buyukaslan, E., &amp; Maher, M.* (2021, June 28–29).
+    Perception of garment fit in different colour lightness and body shape conditions [Paper presentation].
+    <em>2nd Digital Fashion Innovation E-Symposium</em>, Manchester Fashion Institute.
+    <a href="https://fashioninstitute.mmu.ac.uk/assets/uploads/2021/09/DFI2021-Book-of-Abstracts.pdf">PDF</a>
+  </div>
+
+  <div class="year">2021</div>
+  <div class="entry">
+    Baytar, F. &amp; Vuruskan, A. (2021, November 3–6).
+    Dynamic body models and garments for apparel product development: A conceptual model [Paper presentation].
+    <em>2021 International Textile and Apparel Association Virtual Conference</em>.
+  </div>
+
+  <div class="year">2021</div>
+  <div class="entry">
+    Baytar, F., Kim, Y.*, Maher, M.* &amp; Zong, W.* (2021, November 3–6).
+    Preferences of dress design elements for mass customization targeting women in the U.S. [Paper presentation].
+    <em>2021 International Textile and Apparel Association Virtual Conference</em>.
+  </div>
+
+  <div class="year">2021</div>
+  <div class="entry">
+    Baytar, F., Kim, Y.*, Maher, M.*, Galada, A.* &amp; Devine, C. (2021, November 3–6).
+    Examining crotch lengths at the trochanterion plane by using 3D body scanning to suggest considerations for improving sizing of absorbent underwear panels and pads [Paper presentation].
+    <em>2021 International Textile and Apparel Association Virtual Conference</em>.
+  </div>
+
+  <div class="year">2021</div>
+  <div class="entry">
+    DuPuis, J. L.*, Goodge, K.*, Forstenhausler, L.†, Maher, M.*, Frey, M., Baytar, F., &amp; Park, H. (2021, November 3–6).
+    Cloth face mask fit and functionality for children 4–6 years old [Paper presentation].
+    <em>2021 International Textile and Apparel Association Virtual Conference</em>.
+  </div>
+
+  <div class="year">2021</div>
+  <div class="entry">
+    Kim, Y.* &amp; Baytar, F. (2021, November 3–6).
+    Compressive sportswear for strength training of consumers in the U.S.: Wear experience comparisons between men and women [Paper presentation].
+    <em>2021 International Textile and Apparel Association Virtual Conference</em>.
+  </div>
+
+  <div class="year">2021</div>
+  <div class="entry">
+    Yang, Y.* &amp; Baytar, F. (2021, November 3–6).
+    Perceptions toward female fashion model size diversity in luxury brand runways [Paper presentation].
+    <em>2021 International Textile and Apparel Association Virtual Conference</em>.
+  </div>
+
+  <div class="year">2020</div>
+  <div class="entry">
+    Kim, Y.* &amp; Baytar, F. (2020, November 18–20).
+    Men’s purchase behavior and fit preferences for compression sportswear for fitness [Paper presentation].
+    <em>2020 International Textile and Apparel Association Virtual Conference</em>.
+    <a href="https://doi.org/10.31274/itaa.12139">https://doi.org/10.31274/itaa.12139</a>
+  </div>
+
+  <div class="year">2020</div>
+  <div class="entry">
+    Forstenhausler, L.† &amp; Baytar, F. (2020, November 18–20).
+    Dressed to the form: An examination of dress form asymmetry and its relation to garment fit [Paper presentation].
+    <em>2020 International Textile and Apparel Association Virtual Conference</em>.
+    <a href="https://doi.org/10.31274/itaa.12140">https://doi.org/10.31274/itaa.12140</a>
+  </div>
+
+  <div class="year">2020</div>
+  <div class="entry">
+    Xepoleas, L.* &amp; Baytar, F. (2020, November 18–20).
+    Fabricating the fashioned body for museum display: An exploration of digital mannequin-making techniques [Paper presentation].
+    <em>2020 International Textile and Apparel Association Virtual Conference</em>.
+  </div>
+
+  <div class="year">2020</div>
+  <div class="entry">
+    Abner, M., Baytar, F., &amp; Karpova, E. (2020, November 18–20).
+    How social media type, electronic word-of-mouth, and product price influence attitude and intention to purchase ethical apparel for US female consumers [Paper presentation].
+    <em>2020 International Textile and Apparel Association Virtual Conference</em>.
+    <a href="https://doi.org/10.31274/itaa.12164">https://doi.org/10.31274/itaa.12164</a>
+  </div>
+
+  <div class="year">2020</div>
+  <div class="entry">
+    Buyukaslan, E., Baytar, F., &amp; Kalaoglu, F. (2020, November 11–12).
+    Sanal Giydirme Teknolojisi ile Giysi Memnuniyetinin Tahmin Edilmesi (in Turkish).
+    <em>Ulusal Tekstil Kongresi (National Textiles Congress)</em>, Istanbul, Turkey.
+  </div>
+
+  <div class="year">2019</div>
+  <div class="entry">
+    Ashdown, S. P., Baytar, F., &amp; Mbogoni, A.† (2019, October 25–29).
+    3D scan analysis as a tool for comparative study of coverall design [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Las Vegas, NV, United States.
+    <a href="https://doi.org/10.31274/itaa.8825">https://doi.org/10.31274/itaa.8825</a>
+  </div>
+
+  <div class="year">2019</div>
+  <div class="entry">
+    Buyukaslan, E., Baytar, F., &amp; Kalaoglu, F. (2019, October 25–29).
+    The impact of virtual body satisfaction on purchase intentions of a skirt during virtual try-on [Poster presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Las Vegas, NV, United States.
+    <a href="https://doi.org/10.31274/itaa.8828">https://doi.org/10.31274/itaa.8828</a>
+  </div>
+
+  <div class="year">2018</div>
+  <div class="entry">
+    Sanders, E., McKinney, E., &amp; Baytar, F. (2018, November 5–9).
+    New configurations in fashion: innovative forms meet engineered textile printing [STS: Special Topic Session presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Cleveland, OH, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/52190">Link</a>
+  </div>
+
+  <div class="year">2018</div>
+  <div class="entry">
+    Gorea, A., Baytar, F., &amp; Sanders, E. (2018, November 5–9).
+    Moisture responsiveness of seamless knitted wool fabrics [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Cleveland, OH, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/52284">Link</a>
+  </div>
+
+  <div class="year">2018</div>
+  <div class="entry">
+    Buyukaslan, E., Baytar, F., &amp; Kalaoglu, F. (2018, November 5–9).
+    Creating garment simulations: Effectiveness of traditional textile testing equipment versus KES and FAST systems [Poster presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Cleveland, OH, United States.
+    <a href="https://www.iastatedigitalpress.com/itaa/article/id/1484/">Link</a>
+  </div>
+
+  <div class="year">2018</div>
+  <div class="entry">
+    McKinney, E. &amp; Baytar, F. (2018, November 5–9).
+    Design for a wasp-loving entomologist: using digital printing and creative pattern cutting to create an ensemble to reflect one’s research interests [Design presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Cleveland, OH, United States.
+    <a href="https://www.iastatedigitalpress.com/itaa/article/id/1305/">Link</a>
+  </div>
+
+  <div class="year">2017</div>
+  <div class="entry">
+    Baytar, F., Chung, T., &amp; Shin, E. (2017, November 14–18).
+    A needs assessment for an apparel augmented reality application [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, St. Petersburg, FL, United States.
+    <a href="https://www.iastatedigitalpress.com/itaa/article/id/1576/">Link</a>
+  </div>
+
+  <div class="year">2017</div>
+  <div class="entry">
+    Xiang, C., Alam, M.*, Vande Loo, S.†, Steffensmeier, N.†, Dai, R., Sanders, E., Baytar, F., McKinney, E., Roth, S.†, Kaalberg, K.†, &amp; Hwang, C.* (2017, November 14–18).
+    Characterization of flexible solar panels for sustainable smart solar powered apparel [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, St. Petersburg, FL, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/51884">Link</a>
+  </div>
+
+  <div class="year">2017</div>
+  <div class="entry">
+    McKinney, E., Baytar, F., Stanley, E.*, &amp; Karpova, E. (2017, November 14–18).
+    Are they tech-savvy? Understanding technology self-efficacy of apparel female freshmen [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, St. Petersburg, FL, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/51749">Link</a>
+  </div>
+
+  <div class="year">2017</div>
+  <div class="entry">
+    McKinney, E., Baytar, F., Roth, S.†, Kaalberg, K.†, Hwang, C.*, Vande Loo, S.†, Steffensmeier, N.†, Xiang, C., Dai, R., Alam, M.*, &amp; Sanders, E. (2017, November 14–18).
+    Designing a solar powered jacket for the day hiker: Application of the apparel design framework and FEA consumer needs model [Poster presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, St. Petersburg, FL, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/42509">Link</a>
+  </div>
+
+  <div class="year">2017</div>
+  <div class="entry">
+    Abner, M., Baytar, F., &amp; Karpova, E. (2017, November 14–18).
+    Aiding consumers in responsible apparel shopping: Development of a model to evaluate corporate social responsibility [Poster presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, St. Petersburg, FL, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/51599">Link</a>
+  </div>
+
+  <div class="year">2017</div>
+  <div class="entry">
+    Gorea, A., Baytar, F., &amp; Sanders, E. (2017, November 14–18).
+    Uplifted: Future direction in sports bras design [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, St. Petersburg, FL, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/51897">Link</a>
+  </div>
+
+  <div class="year">2017</div>
+  <div class="entry">
+    Plummer, B., Sanders, E., &amp; Baytar, F. (2017, November 14–18).
+    The rise of online digital textile printing services and its impact on costume design practice [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, St. Petersburg, FL, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/51662">Link</a>
+  </div>
+
+  <div class="year">2017</div>
+  <div class="entry">
+    Plummer, B., Sanders, E., &amp; Baytar, F. (2017, November 14–18).
+    Developing a trend analysis instrument to establish a taxonomy of digital textile printing attributes for costume and theatrical fashion design use [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, St. Petersburg, FL, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/51661">Link</a>
+  </div>
+
+  <div class="year">2016</div>
+  <div class="entry">
+    Gorea, A.* &amp; Baytar, F. (2016, November 20–22).
+    Towards developing a method for identifying static compression levels of seamless sports bras using 3D body scanning [Paper presentation].
+    <em>7th International Conference on 3D Body Scanning Technologies</em>, Lugano, Switzerland.
+    <a href="https://doi.org/10.15221/16.022">https://doi.org/10.15221/16.022</a>
+  </div>
+
+  <div class="year">2016</div>
+  <div class="entry">
+    Baytar, F., Chung, T., &amp; Shin, E.* (2016, November 8–11).
+    Can augmented reality help e-shoppers make informed purchases on apparel fit, size and product performance? [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Vancouver, BC.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/51494">Link</a>
+  </div>
+
+  <div class="year">2016</div>
+  <div class="entry">
+    Abner, M.* &amp; Baytar, F. (2016, November 8–11).
+    Can apps encourage engaged learning in a sustainability course? [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Vancouver, BC.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/51419">Link</a>
+  </div>
+
+  <div class="year">2016</div>
+  <div class="entry">
+    Chung, T., Baytar, F., Lee, Y-A., Fiore, A. M., &amp; Crawford, D. (2016, November 8–11).
+    Factors affecting the intention to participate in apparel crowdsourcing: experiment with appearance and ability to express preference. [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Vancouver, BC.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/51457">Link</a>
+  </div>
+
+  <div class="year">2016</div>
+  <div class="entry">
+    Stanley, E.* &amp; Baytar, F. (2016, November 8–11).
+    Implementing pattern grading in a computer-aided patternmaking course: developing materials and utilizing learning tools [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Vancouver, BC.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/51373">Link</a>
+  </div>
+
+  <div class="year">2016</div>
+  <div class="entry">
+    Nam, C.*, Baytar, F., &amp; Kim, Y. D. (2016, November 8–11).
+    Perceived risk as a facilitator between perceived diagnosticity of virtual try-on technologies and attitudes toward the product: A case for male consumers [Poster presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Vancouver, BC.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/51296">Link</a>
+  </div>
+
+  <div class="year">2015</div>
+  <div class="entry">
+    Xiang, C., Baytar, F., &amp; Ozturk, M. (2015, October 28–30).
+    Development of responsive coveralls for pesticide applicators: A concept analysis.
+    <em>The 2015 Fiber Society Fall Meeting</em>, Raleigh, NC, United States.
+  </div>
+
+  <div class="year">2015</div>
+  <div class="entry">
+    McKinney, E. &amp; Baytar, F. (2015, November 9–13).
+    Assignment to increase patternmaking students’ understanding of measurement methods and the relationship between body measurements and sizes [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Santa Fe, NM, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/50986">Link</a>
+  </div>
+
+  <div class="year">2015</div>
+  <div class="entry">
+    Shin, E.*, Zhang, L.*, Hwang, C.* &amp; Baytar, F. (2015, November 9–13).
+    The role of information regarding shapewear performance in female consumers’ online purchase decision [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Santa Fe, NM, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/50890">Link</a>
+  </div>
+
+  <div class="year">2014</div>
+  <div class="entry">
+    Baytar, F. &amp; Karpova, E. (2014, November 12–16).
+    Development of video learning modules as digital stories for an apparel product development and manufacturing course [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Charlotte, NC, United States.
+    <a href="https://itaaonline.org/page/CP2014ped">Link</a>
+  </div>
+
+  <div class="year">2014</div>
+  <div class="entry">
+    Baytar, F. &amp; Karpova, E. (2014, November 12–16).
+    Student perceptions of the use of different content delivery types in a hybrid computer-aided design course [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Charlotte, NC, United States.
+    <a href="https://itaaonline.org/page/CP2014ped">Link</a>
+  </div>
+
+  <div class="year">2014</div>
+  <div class="entry">
+    Baytar, F. &amp; Karpova, E. (2014, November 12–16).
+    Using reflective writing as an assessment tool to evaluate the effectiveness of student learning in a hybrid computer-aided design course [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Charlotte, NC, United States.
+  </div>
+
+  <div class="year">2014</div>
+  <div class="entry">
+    Lee, Y.*, Hwang, C.* &amp; Baytar, F. (2014, November 12–16).
+    Improving apparel fit for older women: A comparison between a parametric avatar and a dress form [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Charlotte, NC, United States.
+    <a href="https://www.iastatedigitalpress.com/itaa/article/id/2814/">Link</a>
+  </div>
+
+  <div class="year">2014</div>
+  <div class="entry">
+    Aultman, J.* &amp; Baytar, F. (2014, January 16–18).
+    Designing quilts with digital tools: An exploratory study on quilters’ technology acceptance.
+    <em>8th International Conference on Design Principles and Practices</em>, Vancouver, Canada.
+  </div>
+
+  <div class="year">2013</div>
+  <div class="entry">
+    Baytar, F. &amp; Meyer, A.† (2013, October 15–18).
+    Equipping apparel design students with the knowledge of 3D/2D simulation technologies: A case study and its implications for curriculum development [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, New Orleans, LA, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/50268">Link</a>
+  </div>
+
+  <div class="year">2013</div>
+  <div class="entry">
+    Baytar, F. &amp; Ashdown, S. P. (2013, October 15–18).
+    Exploring consumption intentions of customized apparel [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, New Orleans, LA, United States.
+    <a href="https://dr.lib.iastate.edu/handle/20.500.12876/50388">Link</a>
+  </div>
+
+  <div class="year">2012</div>
+  <div class="entry">
+    Shin, E.* &amp; Baytar, F. (2012, November 14–17).
+    The effects of ideal female body images and consumers’ body satisfaction on intentions to use virtual try-on models in online apparel shopping [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Honolulu, HI, United States.
+    <a href="https://itaaonline.org/page/CP2012spa">Link</a>
+  </div>
+
+  <div class="year">2012</div>
+  <div class="entry">
+    Park, Y. J.*, Niehm, L., &amp; Baytar, F. (2012, November 14–17).
+    The intention of adopting online mass customization for people with physical limitations: A qualitative approach [Paper presentation].
+    <em>International Textile and Apparel Association Annual Conference</em>, Honolulu, HI, United States.
+  </div>
+
+  <div class="year">2012</div>
+  <div class="entry">
+    Baytar, F., Aultman, J.* &amp; Han, J.* (2012, October 16–17).
+    3D body scanning for examining active body positions: An exploratory study for re-designing scrubs [Paper presentation].
+    <em>3rd International Conference and Exhibition on 3D Body Scanning Technologies</em>, Lugano, Switzerland.
+    <a href="https://doi.org/10.15221/12.057">https://doi.org/10.15221/12.057</a>
+  </div>
+  <!-- add more -->
+</div>
