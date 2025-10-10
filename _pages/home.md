@@ -19,7 +19,7 @@ Our goal is to transform apparel design, product development, manufacturing, and
 - Mass customization of clothing and understanding consumer interest in customization  
 
 #### Our Facilities
-The Cornell Fashion & Body Tech Lab is located in **Room 112, Human Ecology Building** on the Cornell University Ithaca campus. Our space is equipped with advanced tools for apparel research and teaching, including **two 3D body scanners**, virtual/augmented reality applications and more! These resources enable our team and collaborators to prototype, test, and evaluate innovative approaches to apparel design and production.
+The Cornell Fashion & Body Tech Lab is located in **Room 112, Human Ecology Building** on the Cornell University Ithaca campus. Our space is equipped with advanced tools for apparel research and teaching, including two [**3D body scanners**](https://www.bodyscan.human.cornell.edu/scene0037.html), virtual/augmented reality applications and more! These resources enable our team and collaborators to prototype, test, and evaluate innovative approaches to apparel design and production. 
 
-<img src="assets/images/placeholder.png" alt="Photo of Lab Equipment" style="width:400px; border-radius:8px;">
+<img src="assets/images/bodyscan.png" alt="Photo of Lab Equipment" style="width:500px; border-radius:8px;">
 

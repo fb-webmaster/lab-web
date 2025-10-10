@@ -1,0 +1,76 @@
+---
+title: "Contact"
+layout: page
+permalink: "/contact/"
+---
+<style>
+    /* Global styles for your layout go here */
+  
+    /* Styles specific to the contact form */
+    #contact-form-container {
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 5px;
+      background-color: white;
+      padding: 20px;
+    }
+  
+    #contact-form-container input[type=text],
+    #contact-form-container select,
+    #contact-form-container textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+  
+    #contact-form-container input[type=submit] {
+      background-color: #B31B1B;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    #contact-form-container input[type=submit]:hover {
+      background-color: #B31B1B;
+    }
+  </style>
+  <h3>Get in Touch</h3>
+<p>
+  To inquire about collaborating, or getting our help for your projects that are related to creating high-resolution 3D body-scanned objects, animated models, and virtual garment prototyping, please 
+  <a href="mailto:baytar@cornell.edu"><strong>email us</strong></a>.
+</p>
+
+  
+  <h3>Want to join the Lab?</h3>
+
+  <p>Graduate and undergraduate students as well as postdoctoral researchers  interested in joining the Lab are encouraged to contact us to discuss possibilities and apply to the Department of Human Centered Design at Cornell University. </p>
+  
+  <p>Fashion & Body Tech Lab is located at 112 Human Ecology Building, 37 Forest Home Dr. Ithaca, NY 14853.</p>
+
+  <div id="contact-form-container">
+    <form
+         action="https://formspree.io/f/xldppgag"
+         method="POST"
+    >
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name . . ." required >
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name . . ." required >
+  
+      <label for="lname">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email . . ." required >
+  
+      <label for="subject">Message</label>
+      <textarea id="subject" name="subject" placeholder="Write something . . ." style="height:200px" required ></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
